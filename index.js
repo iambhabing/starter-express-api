@@ -6,7 +6,6 @@ const randomstring = require('randomstring');
 const app = express();
 const port = 3000;
 
-// Set up middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
   secret: randomstring.generate(10),
